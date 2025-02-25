@@ -1,0 +1,40 @@
+/* Target the YouTube Essential tab */
+.tab-content {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Media controls container */
+.zen-media-controls {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Show controls on hover */
+.tab-content:hover .zen-media-controls {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style the buttons */
+.zen-media-controls button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.zen-media-controls button:hover {
+    background: #cc0000;
+}
